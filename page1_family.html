@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>משפחה</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+
+<body>
+    <style>
+        input.form-control {
+            text-align: right;
+        }
+        .btn {
+            background-color: #F5D00A;
+            color: #fff;
+            /* width: 100%; */
+        }
+        .btn:hover {
+            background-color: #F5D00A;
+            color: #fff;
+            /* width: 100%; */
+            border: 1px solid rgba(17, 17, 17, 0.425);
+        }
+         nav{
+            text-align: right;
+            direction: rtl;
+            height: 82px;
+            /* margin-bottom: 100px; */
+        }
+        .navbar-brand img{
+            border-radius: 50px;
+        }
+        .navbar-brand span{
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        } 
+         .btnCart{
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            text-align: center;
+            color: #111;
+            cursor: pointer;
+            align-content: space-between;
+            flex-direction: column;
+        }
+            .CartModal{
+                display: flex;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+                text-align: right;
+                color: #111;
+                cursor: pointer;
+                align-content: space-between;
+                flex-direction: column;
+            }
+           .btnCart:hover{
+             display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            text-align: center;
+            color: #111;
+            cursor: pointer;
+            align-content: space-between;
+            flex-direction: column;
+            background-color: #F5D00A !important;
+            color: #fff;
+
+         }
+         .text{
+              font-size: 30px;
+                margin: inherit;
+                margin-bottom: 50px;
+         }
+         .icon{
+             font-size: 70px;
+         }
+         .iconLeft{
+             font-size: 50px;
+            cursor: pointer;
+
+         }
+        a {
+            color: #111;
+            text-decoration: none;
+            background-color: transparent;
+            text-decoration: none;
+        }   
+            a:hover{
+                text-decoration: none !important;
+                color: #111;
+                text-decoration: none;
+                background-color: transparent;
+                text-decoration: none;
+            }
+    </style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"><img width="100px" src="/images/logo_project.png" alt="" srcset=""></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item active">
+                <a class="nav-link" href="/page1_family.html">משפחות</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page7_volunteers.html">מתנדבים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">מלאי</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">סלים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">אירועים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">דוחות</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">הרשאות</a>
+            </li>
+        </ul>
+        <form class="form-inline mr-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="הכנס מילה לחיפוש" aria-label="Search">
+            <button class="btn btn-outline-success mr-2 my-sm-0" type="submit">חיפוש</button>
+            <a class="navbar-brand "><img width="45px" src="/images/profile.webp" alt=""><span>רז</span></a>
+        
+        </form>
+    </div>
+</nav>
+<div class="row">
+    <div class="col-md-12">
+        <div class="iconLeft">
+            <a href="./page3_list_option.html">
+                <i class="fa-solid fa-arrow-left p-4"></i>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4">
+                <a href="#" data-toggle="modal" data-target="#exampleModal2">
+
+                    <div class="btnCart bg-light">
+                        <div class="text">
+                        הוספת משפחה חדשה
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="btnCart bg-light">
+                    <div class="text">
+                         חיפוש/עידכון משפחות
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-toggle="modal" data-target="#exampleModal">
+                    <div class="btnCart bg-light">
+                        <div class="text">
+                            רשימת משפחות
+                        </div>
+                        <div class="icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <h1 class="text-right">! רשימת משפחות</h1>
+            <table class="table table-hover" dir="rtl">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">שם משפחה</th>
+                        <th scope="col">מספר טלפון</th>
+                        <th scope="col">מספר נפשות</th>
+                        <th scope="col">סניף</th>
+                        <th scope="col">תינוק</th>
+                        <th scope="col">משפחה פעילה</th>
+                        <th scope="col">מקבלות סל השבוע</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+            <!-- <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary">כבר נרשמתי</button>
+                <button type="button" class="btn btn-primary">הרשמ/י</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="container">
+                    <form action="" method="post">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <div class="CartModal bg-light">
+                                    <div class="text">
+                                        צרכים מיוחדים
+                                    </div>
+                                    <div class="formCart">
+                                        <div class="form-group">
+                                            <label for="snif">סוג הסל</label>
+                                            <select id="" class="custom-select">
+                                                <option value="1">A</option>
+                                                <option value="2">B</option>
+                                                <option value="3">C</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="snif">כשרות</label>
+                                            <select id="" class="custom-select">
+                                                <option value="1">רבנות</option>
+                                                <option value="2">מחפוד</option>
+                                                <option value="3">חתם סופר</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="elergia">אלרגיות</label>
+                                            <input type="text" class="form-control" id="elergia">
+                                        </div>
+                                        <a class="text-primary" href="#">+ הוסף אלרגיות </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="CartModal bg-light">
+                                    <div class="text">
+        מיקום מגורים    
+                                    </div>
+                                    <div class="formCart">
+                                        <div class="formCart">
+                                            <div class="form-group">
+                                                <label for="snif">סניף</label>
+                                                <select  id="" class="custom-select">
+                                                    <option value="1">ירושלים</option>
+                                                    <option value="2">תל אביב</option>
+                                                    <option value="3">אפרת</option>
+                                                </select>
+                                            </div>
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">כתובת קיימת</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="neighborhood">שכונה</label>
+                                                <input type="text" class="form-control" id="neighborhood">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="street">רחוב</label>
+                                                <input type="text" class="form-control" id="street">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="numh"> מספר בית</label>
+                                                <input type="text" class="form-control" id="numh">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col"> 
+                                                    <label for="in">כניסה</label>
+                                                    <input type="text" id="in" class="form-control">
+                                                </div>
+                                                <div class="form-group col"> <label for="etage">קומה</label>
+                                                    <input type="text"id="etage" class="form-control">
+                                                </div>
+                                            </div>
+                                           
+                                                <div class="form-group">
+                                                    <label for="infop">תיאור מקום</label>
+                                                    <textarea class="form-control" id="infop" rows="2"></textarea>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="CartModal bg-light">
+                                    <div class="text">
+                                        פרטים אישיים
+                                    </div>
+                                    <div class="formCart">
+                                            <div class="form-group">
+                                                <label for="lastn">שם משפחה</label>
+                                                <input type="text" class="form-control" id="lastn">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">מספר טלפון</label>
+                                                <input type="text" class="form-control" id="phone">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="addphone"> מספר טלפון נוסף</label>
+                                                <input type="text" class="form-control" id="addphone">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="nump">מספר נפשות</label>
+                                                <input type="text" class="form-control" id="nump">
+                                            </div>
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">תינוק</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="infof">תיאור משפחה</label>
+                                                <textarea class="form-control" id="infof" rows="2"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="date"> תאריך הצטרפות</label>
+                                                <input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer " style="justify-content: flex-start;">
+                     <button type="button" class="btn px-4">הוספת <i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
