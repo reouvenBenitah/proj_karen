@@ -69,6 +69,10 @@
     .icon{
         font-size: 50px;
     }
+    .iconPen{
+        display: inline-block;
+        margin-right: 15px;
+    }
     .textIcon{
         font-size: 30px;
         margin: inherit;
@@ -138,36 +142,45 @@
                 <span class="icon"><i class="fa-solid fa-hand-holding-hand"></i></span>
             </div>
         </a>
+        <a href="./page16_stock.html">
             <div class="btnCatd bg-light">
                 <span  class="textIcon">מלאי</span>
                 <span class="icon"><i class="fa-solid fa-cart-arrow-down"></i></span>  
             </div>
+        </a>
+        <a href="./page22_salim.html">
             <div class="btnCatd bg-light">
                 <span  class="textIcon">סלים</span>
                 <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
             </div>
+        </a>
         </div>
         <div class="col-md-6">
-        
+        <a href="./page52_events.html">
             <div class="btnCatd bg-light">
                 <span class="textIcon">אירועים</span> 
                 <span class="icon"><i class="fa-solid fa-calendar"></i></span> 
             </div>
-        
+        </a>
+        <a href="./page51_dohot.html">
             <div class="btnCatd bg-light">
                 <span  class="textIcon">דוחות</span>
                 <span class="icon"><i class="fa-solid fa-receipt"></i></span> 
             </div>
-            <div class="btnCatd bg-light" data-toggle="modal" data-target="#exampleModal">
+        </a>
+        <!-- <a href="./page25_permission.html"> -->
+            <div class="btnCatd bg-light" data-toggle="modal" data-target="#exampleModal2">
                 <span class="textIcon">הרשאות</span>
                  <span class="icon"><i class="fa-solid fa-lock"></i></span>  
             </div>
-            <a href="#" data-toggle="modal" data-target="#exampleModal">
+        <!-- </a> -->
+
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
                 <div class="btnCatd bg-light">
                     <span class="textIcon " data-toggle="modal" data-target="#exampleModalLong" id="addEvent"> הרשמה לאירוע הקרוב</span>
                     <span class="icon"><i class="fa-solid fa-user-check"></i></span>  
                 </div>
-            </a>
+        </a>
 
         </div>
   
@@ -177,7 +190,7 @@
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog " role="document">
         <div class="modal-content">
             <div class="modal-header">
 
@@ -222,6 +235,228 @@
                 <button type="button" class="btn btn-secondary">כבר נרשמתי</button>
                 <button type="button" class="btn btn-primary">הרשמ/י</button>
             </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                
+                <div class="form-group col" style="display: inline-flex;">
+                    <div class="">
+                
+                        <h1 class="text-right" style="line-height: 39.4px;">רשימת  מתנדבים</h1>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control mt-1" placeholder="חיפוש">
+                    </div>
+                    <!-- <div class="icon-title-popup">
+                
+                        <i class="fa-solid fa-calendar-days"></i>
+                
+                    </div> -->
+                </div>
+                <table class="table table-hover" dir="rtl">
+                    <thead>
+                        <tr>
+                            <th scope="col">סוג</th>
+                            <th scope="col">ת.ז</th>
+                            <th scope="col">שם משפחה</th>
+                            <th scope="col">שם פרטי</th>
+                            <th scope="col">סניף</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">מתנדב נהלה</td>
+                            <td>312386799</td>
+                            <td>נויברגר</td>
+                            <td> חננאל</td>
+                            <td>אפרת</td>
+                            <td><button class="btn"  data-toggle="modal" data-target="#exampleModal_permission"> הצג הרשאה <i class="fa-solid fa-eye"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">מתנדב נהלה</td>
+                            <td>312386799</td>
+                            <td>נויברגר</td>
+                            <td> חננאל</td>
+                            <td>אפרת</td>
+                            <td><button class="btn" data-toggle="modal" data-target="#exampleModal_permission"> הצג הרשאה <i class="fa-solid fa-eye"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">מתנדב נהלה</td>
+                            <td>312386799</td>
+                            <td>נויברגר</td>
+                            <td> חננאל</td>
+                            <td>אפרת</td>
+                            <td><button class="btn" data-toggle="modal" data-target="#exampleModal_permission"> הצג הרשאה <i class="fa-solid fa-eye"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">מתנדב נהלה</td>
+                            <td>312386799</td>
+                            <td>נויברגר</td>
+                            <td> חננאל</td>
+                            <td>אפרת</td>
+                            <td><button class="btn" data-toggle="modal" data-target="#exampleModal_permission"> הצג הרשאה <i class="fa-solid fa-eye"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary">כבר נרשמתי</button>
+                <button type="button" class="btn btn-primary">הרשמ/י</button>
+            </div> -->
+        </div>
+    </div>
+ </div>
+<div class="modal fade" id="exampleModal_permission" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <h1 class="text-right"> <div class="iconPen">
+                    <i class="fa-solid fa-pen"></i>
+                </div>הרשאות מתנדב ת.ז</h1>
+                <table class="table table-hover" dir="rtl">
+                    <thead>
+                        <tr class="text-right">
+                            <th scope="col"></th>
+                            <th scope="col">משפחה</th>
+                            <th scope="col">מתנדבים</th>
+                            <th scope="col">מלאי </th>
+                            <th scope="col"> סלים</th>
+                            <th scope="col">אירועים </th>
+                            <th scope="col">דוחות</th>
+                            <th scope="col">הרשאות </th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-right">
+                            <th scope="row">צפייה בלבד</th>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                           
+                            
+                        </tr>
+                        <tr class="text-right">
+                            <th scope="row">צפייה ועריכה</th>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+                            
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                       
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary">כבר נרשמתי</button>
+                <button type="button" class="btn btn-primary">הרשמ/י</button>
+            </div> -->
         </div>
     </div>
 </div>

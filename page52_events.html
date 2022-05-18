@@ -1,0 +1,702 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>משפחה</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+
+<body>
+    <style>
+        input.form-control {
+            text-align: left;
+        }
+        .btn {
+            background-color: #F5D00A;
+            color: #fff;
+            /* width: 100%; */
+        }
+        .btn:hover {
+            background-color: #F5D00A;
+            color: #fff;
+            /* width: 100%; */
+            border: 1px solid #fff;
+        }
+         nav{
+            text-align: right;
+            direction: rtl;
+            height: 82px;
+            /* margin-bottom: 100px; */
+        }
+        .btnTable{
+            background-color: #007bff;
+            color: #fff;
+
+        }
+         .btnTable:hover{
+            background-color: #007bff;
+            color: #fff;
+            border: 1px solid #fff;
+
+        }
+        .navbar-brand img{
+            border-radius: 50px;
+        }
+        .navbar-brand span{
+            display: block;
+            font-size: 15px;
+            text-align: center;
+        } 
+         .btnCart{
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            text-align: center;
+            color: #111;
+            cursor: pointer;
+            align-content: space-between;
+            flex-direction: column;
+        }
+            .CartModal{
+                display: flex;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+                text-align: right;
+                color: #111;
+                cursor: pointer;
+                align-content: space-between;
+                flex-direction: column;
+            }
+           .btnCart:hover{
+             display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            text-align: center;
+            color: #111;
+            cursor: pointer;
+            align-content: space-between;
+            flex-direction: column;
+            background-color: #F5D00A !important;
+            color: #fff;
+
+         }
+         .text{
+              font-size: 30px;
+                margin: inherit;
+                margin-bottom: 50px;
+         }
+         .icon{
+             font-size: 70px;
+         }
+         .iconLeft{
+             font-size: 50px;
+            cursor: pointer;
+
+         }
+        a {
+            color: #111;
+            text-decoration: none;
+            background-color: transparent;
+            text-decoration: none;
+        }   
+            a:hover{
+                text-decoration: none !important;
+                color: #111;
+                text-decoration: none;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            .icon-title-popup{
+                font-size: 30px;
+            }
+            label{
+                float:right;
+            }
+            
+             tr th,td{
+                text-align: right;
+            }
+            table tr td:nth-child(3) {
+                text-align: left;
+            }
+            .modal-footer{
+                justify-content: start;
+            }
+            select option{
+                text-align: right;
+            }
+            p{
+                text-align: right;
+                font-size: 25px;
+            }
+            #exampleModal4 h1{
+                margin-bottom: 45px;
+            }
+            h1 span{
+                margin-right: 15px;
+            }
+             h1 span i:hover{
+                color: #F5D00A;
+            cursor: pointer;
+
+            }
+    </style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"><img width="100px" src="/images/logo_project.png" alt="" srcset=""></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item active">
+                <a class="nav-link" href="/page1_family.html">משפחות</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page7_volunteers.html">מתנדבים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page16_stock.html">מלאי</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page22_salim.html">סלים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page52_events.html">אירועים</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="./page51_dohot.html">דוחות</a>
+            </li>
+            <li class="nav-item ֿ">
+                <a class="nav-link" href="#">הרשאות</a>
+            </li>
+        </ul>
+        <form class="form-inline mr-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="הכנס מילה לחיפוש" aria-label="Search">
+            <button class="btn btn-outline-success mr-2 my-sm-0" type="submit">חיפוש</button>
+            <a class="navbar-brand "><img width="45px" src="/images/profile.webp" alt=""><span>רז</span></a>
+        
+        </form>
+    </div>
+</nav>
+<div class="row">
+    <div class="col-md-12">
+        <div class="iconLeft">
+            <a href="./page3_list_option.html">
+                <i class="fa-solid fa-arrow-left p-4"></i>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4">
+                <a href="#" data-toggle="modal" data-target="#exampleModalEventPrivate">
+
+                    <div class="btnCart bg-light">
+                        <div class="text">
+                        אירוע פרטי
+                        </div>
+                        <div class="icon">
+                        <i class="fa-regular fa-calendar"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="btnCart bg-light">
+                    <div class="text">
+                        אירוע מיוחד
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-toggle="modal" data-target="#exampleModal2">
+                    <div class="btnCart bg-light">
+                        <div class="text">
+                            חלוקה שבועית
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <h1 class="text-right">! רשימת משפחות</h1>
+            <table class="table table-hover" dir="rtl">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">שם משפחה</th>
+                        <th scope="col">מספר טלפון</th>
+                        <th scope="col">מספר נפשות</th>
+                        <th scope="col">סניף</th>
+                        <th scope="col">תינוק</th>
+                        <th scope="col">משפחה פעילה</th>
+                        <th scope="col">מקבלות סל השבוע</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>מדינה</td>
+                        <td>052-3145665</td>
+                        <td>5</td>
+                        <td> אפרת</td>
+                        <td>לא</td>
+                        <td>כן</td>
+                        <td>כן</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+            <!-- <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary">כבר נרשמתי</button>
+                <button type="button" class="btn btn-primary">הרשמ/י</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="form-row">
+
+
+                    <div class="form-group col" style="display: inline-flex;flex-direction: row-reverse;">
+                        <div class="">
+
+                            <h1 class="text-right" style="line-height: 39.4px;">רשימת החלוקות השבועיות</h1>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <select id="" class="custom-select text-right">
+                                <option value="1">בחר סניף</option>
+                                <option value="1">ירושלים</option>
+                                <option value="2">תל אביב</option>
+                                <option value="3">אפרת</option>
+                            </select>
+                        </div>
+                        <div class="icon-title-popup">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <table class="table table-hover" dir="rtl">
+                    <thead>
+                        <tr>
+                            <th scope="col">סניף</th>
+                            <th scope="col"> תאריך חלוקה</th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>30/01/2022</td>
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>30/01/2022</td>
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>30/01/2022</td>
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer ">
+
+                <button type="button" id="popupadd" class="btn  " data-toggle="modal" data-target="#exampleModal3">
+                    הוספת חלוקה שבועית +</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalEventPrivate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="form-row">
+
+
+                    <div class="form-group col" style="display: inline-flex;flex-direction: row-reverse;">
+                        <div class="">
+
+                            <h1 class="text-right" style="line-height: 39.4px;">רשימת האירועים הפרטיים</h1>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <select id="" class="custom-select text-right">
+                                <option value="1">בחר סניף</option>
+                                <option value="1">ירושלים</option>
+                                <option value="2">תל אביב</option>
+                                <option value="3">אפרת</option>
+                            </select>
+                        </div>
+                        <div class="icon-title-popup">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <table class="table table-hover" dir="rtl">
+                    <thead>
+                        <tr>
+                            <th scope="col">סניף</th>
+                            <th scope="col"> תאריך האירוע </th>
+                            <th scope="col"> שם האירוע </th>
+                            <th scope="col"> מספר משפחה </th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>30/01/2022</td>
+                            <td>בר מצווה</td>
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>20/02/2022</td>
+                            <td>חתונה</td>
+
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td> אפרת</td>
+                            <td>10/03/2022</td>
+                            <td>ברית מילה</td>
+
+                            <td><button class="btn btnTable" data-toggle="modal" data-target="#exampleModal4"> סיכום
+                                </button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer ">
+
+                <button type="button" id="popupadd" class="btn  " data-toggle="modal" data-target="#exampleModal3">
+                    הוספת חלוקה שבועית +</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body " dir="rtl">
+                <h1 class="text-right">הוספת חלוקה שבועית </h1>
+                <div class="form-group col-md-4 pr-0">
+                    <label for="">סניף</label>
+                    <select id="" class="custom-select">
+                        <option value="1">בחר סניף</option>
+                        <option value="1">ירושלים</option>
+                        <option value="2">תל אביב</option>
+                        <option value="3">אפרת</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 pr-0">
+                    <label for="">תאריך החלוקה</label>
+                    <input type="text" class="form-control">
+                </div>
+                <table class="table table-hover listOptionTable" dir="rtl">
+
+                    <tbody>
+                        <tr>
+                            <td>מספר משפחות לחלוקה</td>
+                            <td>1</td>
+                            <td><button class="btn  btnTable"> הצג רשימת משפחות <i class="fa-solid fa-eye"></i></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>מספר סלים בסיסיים </td>
+                            <td>1</td>
+                            <td><button class="btn  btnTable"> הצג סל בסיסי שבועי <i
+                                        class="fa-solid fa-eye"></i></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>מספר סלים מיוחדים </td>
+                            <td>1</td>
+                            <td><button class="btn  btnTable"> הסלים המיוחדים <i class="fa-solid fa-eye"></i></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> מספר נהגים</td>
+                            <td>1</td>
+                            <td><button class="btn  btnTable"> הצג רשימת נהגים <i class="fa-solid fa-eye"></i></button>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div class="form-group">
+                    <label for="">הערות</label>
+                    <textarea rows="5" id="" class="form-control" placeholder="" aria-describedby="helpId"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer float-left ">
+
+                <button type="button" id="popupadd" class="btn  " data-toggle="modal" data-target="#exampleModal3">
+                    הוספת
+                    +</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body " dir="rtl">
+                <h1 class="text-right mb-6">סיכום חלוקה שבועית 
+                    <span>
+                        <i class="fa-solid fa-print"></i>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </span>
+                </h1>
+            
+                <div class="form-group  pr-0">
+                    <p for="">סניף: <strong><סניף></strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for="">תאריך החלוקה: <strong> < DD/MM/YYYY > </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for="">מספר המשפחות לחלוקה: <strong>
+                            <מספר משפחות  >
+                        </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for=""> מספר המשפחות שקיבלו בפועל: <strong>
+                            < מספר המשפחות שקיבלו בפועל>
+                        </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for=""> מספר סלים מיוחדים: <strong>
+                            <  מספר סלים מיוחדים >
+                        </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for="">מספר סלים בסיסיים: <strong>
+                            <מספר סלים בסיסיים>
+                        </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for=""> מספר נהגים : <strong> <מספר נהגים> </strong></p>
+                </div>
+                <div class="form-group  pr-0">
+                    <p for="">מספר נהגים שהתייצבו: <strong> <מספר נהגים שהתייצבו> </strong></p>
+                </div>
+                <div class="form-group">
+                    <p for="">הערות:</p>
+                    <textarea rows="5" id="" class="form-control" placeholder="" aria-describedby="helpId"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer float-left ">
+
+                <button type="button" id="popupadd" class="btn  " data-toggle="modal" data-target="#exampleModal3">
+                    שמור
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            $('#popupadd').click(function(){
+                // $('#exampleModal2').hide();
+            })
+        </script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>מתנדבים</title>
+    <title>מלאי</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -120,7 +120,10 @@
         .miniCart{
             margin-top: 30px;
         }
-         h1 span {
+        .custom-control{
+            margin-bottom: 13px;
+        }
+        h1 span {
                 margin-right: 40px;
                 font-size: 25px;
             }
@@ -132,6 +135,9 @@
                 text-align: right;
                 margin-bottom: 15px;
 
+            }
+            label{
+                float: right;
             }
     </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -184,7 +190,7 @@
 
                     <div class="btnCart bg-light">
                         <div class="text">
-                            הוספת מתנדב חדש
+                            הוספת מוצר חדש
                         </div>
                         <div class="icon">
                             <i class="fa-solid fa-plus"></i>
@@ -195,7 +201,7 @@
             <div class="col-md-4">
                 <div class="btnCart bg-light">
                     <div class="text">
-                        חיפוש/עידכון מתנדב
+                    חיפוש/עדכון מוצר
                     </div>
                     <div class="icon">
                         <i class="fa-solid fa-pen"></i>
@@ -206,7 +212,7 @@
                 <a href="#" data-toggle="modal" data-target="#exampleModal">
                     <div class="btnCart bg-light">
                         <div class="text">
-                            רשימת מתנדבים
+                            רשימת מלאי
                         </div>
                         <div class="icon">
                             <i class="fa-solid fa-clipboard-list"></i>
@@ -231,7 +237,7 @@
                         <h1 class="text-right">
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false"
                                 aria-expanded="false"><i title="סנן" class="fa-solid fa-filter"></i></span>
-                             רשימת מתנדבים
+                            רשימת מתנדבים
                             <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
                                 <strong class="text-right">סניף</strong>
                     
@@ -247,55 +253,77 @@
                                     <input type="checkbox" class="custom-control-input" id="customCheck122221">
                                     <label class="custom-control-label" for="customCheck122221"> תקוע</label>
                                 </div>
-                                <strong class="text-right mt-2">סוג מתנדב</strong>
+
+
+                                <strong class="text-right mt-2">קטגוריה </strong>
                                 <div class="custom-control custom-checkbox text-right">
                                     <input type="checkbox" class="custom-control-input" id="customCheck122221">
-                                    <label class="custom-control-label" for="customCheck122221"> אחראי אריזה </label>
+                                    <label class="custom-control-label" for="customCheck122221"> יבשים </label>
                                 </div>
                                 <div class="custom-control custom-checkbox text-right">
                                     <input type="checkbox" class="custom-control-input" id="es">
-                                    <label class="custom-control-label" for="es"> אחראי אירועים מיוחדים </label>
+                                    <label class="custom-control-label" for="es"> קפואים </label>
                                 </div>
                                 <div class="custom-control custom-checkbox text-right">
                                     <input type="checkbox" class="custom-control-input" id="rl">
-                                    <label class="custom-control-label" for="rl"> אחראי איסוף כללי </label>
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <label class="custom-control-label" for="rl"> אחראי איסוף רמי לוי </label>
-                                    <input type="checkbox" class="custom-control-input" id="rl">
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <input type="checkbox" class="custom-control-input" id="e_s">
-                                    <label class="custom-control-label" for="e_s"> אחראי אירועים מיוחדים   </label>
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <input type="checkbox" class="custom-control-input" id="res_s">
-                                    <label class="custom-control-label" for="res_s"> אחראי נהגים  </label>
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <input type="checkbox" class="custom-control-input" id="driver">
-                                    <label class="custom-control-label" for="driver">נהג </label>
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <input type="checkbox" class="custom-control-input" id="res_stock">
-                                    <label class="custom-control-label" for="res_stock"> אחראי מחסן </label>
-                                </div>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <input type="checkbox" class="custom-control-input" id="ve_offic">
-                                    <label class="custom-control-label" for="ve_offic">  מתנדב הנהלה </label>
-                                </div>
-                                
-                                <strong class="text-right mt-2">פעיל</strong>
-                                <div class="custom-control custom-checkbox text-right">
-                                    <label class="custom-control-label" for="yes"> כן</label>
-                                    <input type="checkbox" class="custom-control-input" id="yes">
-                                </div>
-                    
-                                <div class="custom-control custom-checkbox text-right">
-                                    <label class="custom-control-label" for="no"> לא</label>
-                                    <input type="checkbox" class="custom-control-input" id="no">
+                                    <label class="custom-control-label" for="rl">קירור </label>
                                 </div>
 
+
+                                <strong class="text-right mt-2">סוג </strong>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="base">
+                                    <label class="custom-control-label" for="base"> בסיס  </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="f">
+                                    <label class="custom-control-label" for="f">פירות/ירקות </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="milk">
+                                    <label class="custom-control-label" for="mmilk">מוצרי חלב </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="baby">
+                                    <label class="custom-control-label" for="baby">מוצרי תינוקות </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="lov">
+                                    <label class="custom-control-label" for="lov"> שימורים </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="boul">
+                                    <label class="custom-control-label" for="boul"> מאפים </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="sp">
+                                    <label class="custom-control-label" for="sp">מוצר מיוחד </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="ashgaha1">
+                                    <label class="custom-control-label" for="ashgaha1"> בד"צ </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="veg">
+                                    <label class="custom-control-label" for="veg"> צמחוני </label>
+                                </div>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="veg2">
+                                    <label class="custom-control-label" for="veg2"> טבעוני </label>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="snif">ספק</label>
+                                    <select id="" class="custom-select">
+                                        <option value="1">רמי לוי</option>
+                                        <option value="2">עושר עד </option>
+                                        <option value="3">סופר סול</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="neighborhood">מוצר</label>
+                                    <input type="text" class="form-control" id="neighborhood" placeholder="הכנס מוצר">
+                                </div>
                                 <div class="form-group col">
                                     <input type="button" data-toggle="dropdown" class="btn w-100" value="סנן">
                                 </div>
@@ -305,81 +333,103 @@
                     </div>
                     <table class="table table-hover" dir="rtl">
                         <thead>
-                            <tr>
+                            <tr class="text-right">
+                                <th scope="col">שם המוצר</th>
                                 <th scope="col">סוג</th>
-                                <th scope="col">ת.ז</th>
-                                <th scope="col">שם משפחה</th>
-                                <th scope="col">שם פרטי</th>
-                                <th scope="col">מספר טלפון</th>
-                                <th scope="col">סניף</th>
-                                <th scope="col">מתנדב פעיל</th>
+                                <th scope="col">קטגוריה </th>
+                                <th scope="col"> כמות</th>
+                                <th scope="col">בד"צ </th>
+                                <th scope="col">צמחוני</th>
+                                <th scope="col">טבעוני </th>
+                                <th scope="col">שם ספק </th>
+                                <th scope="col"> סניף </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
+                            <tr class="text-right">
+                                <th scope="row">קמח</th>
+                                <td>בסיס</td>
+                                <td>יבשים</td>
+                                <td><input type="number" id="numstock" value="30" style="width: 4em;" class="form-control"></td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+
+                                </div>
+                            </td>
+                                <td>רמי לוי</td>
                                 <td>אפרת</td>
-                                <td>כן</td>
                             </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">מתנדב נהלה</th>
-                                <td>312386799</td>
-                                <td>נויברגר</td>
-                                <td> חננאל</td>
-                                <td>052-3145665</td>
-                                <td>אפרת</td>
-                                <td>כן</td>
-                            </tr>
+                            <tr class="text-right">
+                                <th scope="row">קמח</th>
+                                <td>בסיס</td>
+                                <td>יבשים</td>
+                                <td><input type="number" id="numstock" value="30" style="width: 4em;" class="form-control"></td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" checked id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" checked id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5"></label>
                             
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck7"></label>
+                            
+                                    </div>
+                                </td>
+                                <td>רמי לוי</td>
+                                <td>אפרת</td>
+                            </tr>
+                            <tr class="text-right">
+                                <th scope="row">קמח</th>
+                                <td>בסיס</td>
+                                <td>יבשים</td>
+                                <td><input type="number" id="numstock" value="30" style="width: 4em;" class="form-control"></td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" checked id="customCheck8">
+                                        <label class="custom-control-label" for="customCheck8"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                        <label class="custom-control-label" for="customCheck9"></label>
+                            
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="custom-control custom-checkbox text-right">
+                                        <input type="checkbox" class="custom-control-input" checked id="customCheck10">
+                                        <label class="custom-control-label" for="customCheck10"></label>
+                            
+                                    </div>
+                                </td>
+                                <td>רמי לוי</td>
+                                <td>אפרת</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -407,43 +457,28 @@
                         <form action="" method="post">
                             <div class="row ">
                                 <div class="col-md-4">
-                                    <div class="CartModal miniCart mt-0 bg-light">
-                                        <div class="text">
-                                            הרשאות למערכת
+                                    <div class="CartModal  bg-light">
+                                        <div class="text mt-0">
+                                            חלוקה לסניף
                                         </div>
-                                        <div class="formCart">
-                                            <button class=" btn btn-primary">צור הרשאה <i class="fa-solid fa-eye"></i></button>  סוג הרשאה  
+                                    
+                                        <div class="form-group">
+                                            <label for="neighborhood">שם הסניף </label>
+                                            <input type="text" class="form-control" id="neighborhood">
                                         </div>
+                                        <div class="form-group">
+                                            <label for="street">כמות</label>
+                                            <input type="text" class="form-control" id="street">
+                                        </div>
+                                    
                                     </div>
 
-                                    <div class="CartModal miniCart  bg-light">
-                                        <div class="text mt-0">
-                                            צרכים מיוחדים
-                                        </div>
-                                        <div class="formCart">
-                                            <div class="custom-control custom-checkbox text-right">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                <label class="custom-control-label" for="customCheck3"> נהג איסוף רמי לוי</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox text-right">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                <label class="custom-control-label" for="customCheck4"> נהג חלוקה</label>
-                                            </div>
-                                            <div class="form-group mt-3">
-                                                <label for="numfd">רשימת מספר משפחות לחלוקה</label>
-                                                <input type="text" class="form-control" id="numfd">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="numfm">מספר משפחות מקסימלי לחלוקה</label>
-                                                <input type="text" class="form-control" id="numfm">
-                                            </div>
-                                        </div>
-                                    </div>
+                                  
                                 </div>
                                 <div class="col-md-4">
                                     <div class="CartModal bg-light">
                                         <div class="text">
-                                            מיקום מגורים
+                                            ספק
                                         </div>
 
                                                 <div class="form-group">
@@ -455,84 +490,80 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="neighborhood">שכונה</label>
+                                                    <label for="neighborhood">שם הספק</label>
                                                     <input type="text" class="form-control" id="neighborhood">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="street">רחוב</label>
+                                                    <label for="street">כתובת</label>
                                                     <input type="text" class="form-control" id="street">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="numh"> מספר בית</label>
+                                                    <label for="numh"> מספר טלפון</label>
                                                     <input type="text" class="form-control" id="numh">
                                                 </div>
-                                                <!-- <div class="form-row">
-                                                    <div class="form-group col">
-                                                        <label for="in">כניסה</label>
-                                                        <input type="text" id="in" class="form-control">
-                                                    </div>
-                                                    <div class="form-group col"> <label for="etage">קומה</label>
-                                                        <input type="text" id="etage" class="form-control">
-                                                    </div>
-                                                </div> -->
+                                                <div class="form-group">
+                                                    <label for="numh"> מייל</label>
+                                                    <input type="text" class="form-control" id="numh">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="snif">יום הספקה</label>
+                                                    <select id="" class="custom-select">
+                                                        <option value="1">ראשון</option>
+                                                        <option value="2">שני </option>
+                                                        <option value="3">שלישי</option>
+                                                        <option value="4">רבעי</option>
+                                                    </select>
+                                                </div>
+                                             
                                     </div>
                                    
-                                    <div class="CartModal miniCart bg-light">
-                                        <div class="text mt-0">
-                                            פרטי רישום
-                                        </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group col"> <label for="dateend">תאריך סיום התנדבות</label>
-                                                    <input type="text" id="dateend" class="form-control">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label for="dateIn">תאריך רישום</label>
-                                                    <input type="text" id="dateIn" class="form-control">
-                                                </div>
-                                                
-                                            </div>
-                                          
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-md-4">
                                     <div class="CartModal bg-light">
                                         <div class="text">
-                                            פרטים אישיים
+                                            שם מוצר
                                         </div>
                                         <div class="formCart">
                                             <div class="custom-control custom-checkbox text-right">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2">מתנדב פעיל</label>
+                                                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                                <label class="custom-control-label" for="customCheck11"> מוצר במלאי</label>
                                             </div>
                                             <div class="form-group">
-                                                <label for="sugv">סוג מתנדב</label>
+                                                <label for="sugm">סוג מוצר </label>
                                                 <input type="text" class="form-control" id="sugv">
                                             </div>
                                             <div class="form-group">
-                                                <label for="tz"> ת.ז</label>
-                                                <input type="text" class="form-control" id="tz">
+                                                <label for="tz"> קטגוריה</label>
+                                                <input type="text" class="form-control" id="cate">
                                             </div>
                                             <div class="form-group">
-                                                <label for="lastn">שם משפחה</label>
-                                                <input type="text" class="form-control" id="lastn">
+                                                <label for="lastn">כמות </label>
+                                                <input type="text" class="form-control" id="conti">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="firstn"> שם פרטי</label>
-                                                <input type="text" class="form-control" id="firstn">
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                <label class="custom-control-label" for="customCheck12"> בד"צ </label>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="phone">מספר טלפון</label>
-                                                <input type="text" class="form-control" id="phone">
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                                <label class="custom-control-label" for="customCheck13"> צמחוני </label>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="email">מייל</label>
-                                                <input type="email" class="form-control" id="email">
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                                <label class="custom-control-label" for="customCheck14"> טבעוני </label>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="date"> תאריך הצטרפות</label>
-                                                <input type="text" class="form-control" id="date"
-                                                    placeholder="DD/MM/YYYY">
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                <label class="custom-control-label" for="customCheck15"> מוצר מיוחד </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck16">
+                                                <label class="custom-control-label" for="customCheck16"> מוצר קבוע </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox text-right">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck17">
+                                                <label class="custom-control-label" for="customCheck17"> מוצר מתחלף </label>
                                             </div>
                                         </div>
                                     </div>
